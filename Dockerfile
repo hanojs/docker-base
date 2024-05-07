@@ -1,5 +1,6 @@
 FROM ubuntu:trusty
-MAINTAINER Wurstmeister 
+# Forked from Wurstmeister's
+MAINTAINER Hanojs 
 RUN apt-get update; apt-get install -y unzip openjdk-7-jre-headless wget supervisor docker.io openssh-server
 ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64/
 RUN echo 'root:wurstmeister' | chpasswd
